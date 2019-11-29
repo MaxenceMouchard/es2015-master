@@ -1,0 +1,29 @@
+{
+  "name": "es2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "babel": "babel",
+    "compile": "babel es2015 --out-dir . --source-maps",
+    "start": "npm run compile -- -watch",
+    "mocha": "npm run mocha",
+    "test": "mocha -- src/**/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.11",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "rxjs": "^6.5.3"
+  }
+}
